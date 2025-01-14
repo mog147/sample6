@@ -1,8 +1,5 @@
 $(function(){
 
-    if ($(window).width() <= 768) {
-        // スマホの場合の処理
-
                 //表示非表示切替
         $(".header__menu").on("click",function(){
 
@@ -20,15 +17,10 @@ $(function(){
         
             }
         })
-    }
-
-    
+   
 });
 
 $(function(){
-
-    if ($(window).width() <= 768) {
-        // スマホの場合の処理
 
                 //表示非表示切替
         $(".header__menu-bar").on("click",function(){
@@ -47,11 +39,9 @@ $(function(){
         
             }
         })
-    }
-
-
     
 });
+
 
 
 
