@@ -13,14 +13,11 @@
 /* phoneのときの制御 */
 @media (max-width:599px) {
 
-    h1,
-    .conPC,
-    .header__boxA,
-    .tap__btn__pc  {
+    .conPC {
       display: none;
     }
   
-    h2,label {
+    h2 {
       font-size: 18px;
     }
   
@@ -28,10 +25,6 @@
         font-size: 14px;
     }
 
-    .conA__boxA{
-      position: relative;
-    }
-   
   } 
     
   /* phoneのときの制御 */
@@ -41,7 +34,7 @@
   /* タブレットのときの制御 */
   @media (min-width:600px) and (max-width:799px) {
   
-    h2,label {
+    h2 {
       font-size: 20px;
     }
   
@@ -58,15 +51,7 @@
 
   @media (min-width:800px){
 
-    h1{
-      color: var(--bright-main-color);
-      font-size: 55px;
-      letter-spacing: 0.3rem;
-      font-weight: normal;
-      margin: 2rem 0;
-    }
-  
-    h2,label {
+    h2 {
         font-size: 24px;
     }
   
@@ -75,7 +60,15 @@
     }
 
     header{
-      z-index: 100;
+      top:0;
+      height: 130px;
+      width: var(--small-width);
+    }
+
+
+    .header__reserve{
+      position: relative;
+      z-index: 999;
     }
 
   
@@ -147,21 +140,12 @@
     .acd-content a{
       color: var(--sub-color);
     }
-
-    .tap__btn__pc{
-      position: absolute;
-      top:60%;
-      left:90%;
-      width: 7%;
-      z-index: 30;
-    }
  
     header,
     .conA,
     .scrollbox{
-      max-width:var(--small-width);
+      width:var(--small-width);
       height: auto;
-
       left: 50%;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
@@ -171,7 +155,7 @@
     }
 
     .conA{
-      margin-top:30% ;
+      margin-top:45% ;
       z-index: 100;
     }
 
@@ -180,7 +164,7 @@
     }
   
     .conB{
-      margin-top: 430px;
+      margin-top: 737%;
     }
   
     .conB__boxA{
