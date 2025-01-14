@@ -1,0 +1,231 @@
+
+/* 基本色 */
+:root {
+  --main-color : #fff; /*rgba(255, 255, 255, 0)*/
+  --accent-color : #fee5f0;
+  --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
+  --large-width:1000px;
+  --middle-width:800px;
+  --small-width:450px;
+}
+  
+ 
+ /* ------------------------ */
+/* phoneのときの制御 */
+@media (max-width:599px) {
+
+    h1,
+    .conPC,
+    .header__boxA,
+    .tap__btn__pc  {
+      display: none;
+    }
+  
+    h2,label {
+      font-size: 18px;
+    }
+  
+    p {
+        font-size: 14px;
+    }
+
+    .conA__boxA{
+      position: relative;
+    }
+
+    .conA__image{
+      position: absolute;
+      top:330px;
+      left: 100px;
+      width: 80%;
+      overflow: hidden;
+    }
+   
+  } 
+    
+  /* phoneのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* タブレットのときの制御 */
+  @media (min-width:600px) and (max-width:799px) {
+  
+    h2,label {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+  }
+  /* タブレットのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* PCのときの制御 */
+
+  @media (min-width:800px){
+
+    h1{
+      color: var(--bright-main-color);
+      font-size: 55px;
+      letter-spacing: 0.3rem;
+      font-weight: normal;
+      /* adobe fonts */
+      font-family: "ta-dansyaku", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin: 2rem 0;
+    }
+  
+    h2,label {
+        font-size: 24px;
+    }
+  
+    p {
+        font-size: 18px;
+    }
+  
+    .header{
+      position: fixed;
+    }
+  
+    .header__menu{
+      display: none;
+      position: relative;
+    }
+  
+    .header__menu-list{
+      background-color: transparent;
+      height: auto;
+  
+    }
+
+    .header__menu-bar,
+    .tap__btn{
+      display: none!important;
+
+    }
+
+    .conPC {
+      position: fixed;
+      top:  -5rem;
+      z-index: -1;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      min-height: 450px;
+      background-position: center bottom;
+      background-size: contain;
+      text-align: center;
+      overflow: hidden;
+      content:'';
+      
+    }
+  
+    .conPC,
+    .main__image{
+        width: 100%;
+    }
+
+    .main__image{
+      position: relative;
+      z-index: 10;
+    }
+
+    .title img{
+      margin: 50px auto;
+    }
+
+    .subtitle{
+      position: absolute;
+      top:12rem;
+      left: 7rem;
+      z-index: 20;
+      width: 15%;
+    }
+  
+    .header__accordion{
+      position: absolute;
+      top:24%;
+      left:67%;
+      z-index: 20;
+    }
+
+    .menu__list{
+      background-color: rgb(255 255 255 / 0.5);
+    }
+
+    .menu__item,
+    .menu__item label,
+    .acd-content a{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 10px 0;
+      flex-wrap: wrap; 
+    }
+
+    .acd-content a{
+      color: var(--sub-color);
+    }
+
+    .tap__btn__pc{
+      position: absolute;
+      top:60%;
+      left:90%;
+      width: 7%;
+      z-index: 30;
+    }
+ 
+    
+
+    .scrollbox{
+      max-width:var(--small-width);
+      height: auto;
+
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      top:2000px;
+      position: absolute;
+    }
+  
+    .conB{
+      margin-top: 430px;
+    }
+  
+    .conB__boxA{
+      margin-top: 80px;
+    }
+  
+    .conB__boxB{
+      margin-top: 60px;
+    }
+  
+    .foot__image__pc{
+      position: fixed;
+      top:5%;
+      left:180%;
+      width: 30%;
+    }
+
+  }
+
+ 
+  /* PCのときの制御 */
+  /* ------------------------ */
+  
+  /* ------------------------ */
+  /* ダークモードの対応 */
+  .div {
+    color: light-dark(#333, #fff);
+    background-color: light-dark(#fff, #333);
+  }
+  /* ダークモードの対応 */
+  /* ------------------------ */
+  
+  
+  

@@ -1,458 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-   <!-- responsive -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>title</title>
+    
+    <meta charset="UTF-8">
 
-  <!-- リセットCSSの読み込み -->
-  <link rel="stylesheet" href="path/to/reset.css">
+    <!-- レスポンシブデザインに必須 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/96078d8661.js" crossorigin="anonymous"></script>
+    <!-- リセットCSSの読み込み -->
+    <link rel="stylesheet" href="path/to/reset.css">
 
-  <!-- slider -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/6-1-7.css">
+    <title>title</title>
+    <link rel="icon" href="img/dummy.jpg">
 
-  <!-- 他のCSSファイルの読み込み -->
-  <link href="css/style.css" rel="stylesheet" />
+   
+     <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/96078d8661.js" crossorigin="anonymous"></script>
+
+    <!-- adobe fonts -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'bju5ppq',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+     <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    
 </head>
-
 <body>
-  <div class="wrapper">
 
-    <header class="header">
-      <div class="hamburger">
-
-          <p class="btn-gNav">
-            <span></span>
-            <span></span>
-            <span></span>
-          </p>
-
-          <nav class="gnav">
-            <ul class="gnav__list">
-              <li class="gnav__item"><a class="gnav__link" href="#">product</a></li>
-              <li class="gnav__item"><a class="gnav__link" href="#">about</a></li>
-              <li class="gnav__item"><a class="gnav__link" href="#">contact</a></li>
-            </ul>
-          </nav>
-
-        </div>
-    </header>
-      <!-- /header -->
-
-      <!-- main-visual -->
-    <section class="conA">
-        <div class="container">
-
-            <div class="conA__text">
-              <h1>title</h1>
-              <p class="sub_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            </div>
-
-        </div>
-    </section>
-      <!-- /main-visual -->
-
-      <!-- introduce -->
-    <div class="conB">
-        <div class="container">
-
-            <div class="conB__icon">
-              <img class="conB__icon-image" src="img/dummy.jpg" alt="image-icon">
-            </div>
-
-            <div class="conB__text">
-                <h2>山田 太郎</h2>
-                <p class="en-name">yamada taro</p>
-                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-            <nav class="sns">
-
-              <ul class="sns__list">
-                  <li class="sns__item">
-                      <a href="#" target="_blank">
-                          <span class="fa-brands fa-square-threads" title="threads" >
-                          </span>
-                      </a>
-                  </li>  
-                  
-                  <li class="sns__item">
-                      <a href="#" target="_blank">
-                          <span class="fa-brands fa-instagram" title="instagram">
-                          </span>
-                      </a>
-                  </li>
-                  
-                  <li class="sns__item">
-                      <a href="#" target="_blank">
-                          <span  class="fa-regular fa-note-sticky" title="note" >
-                          </span>
-                      </a>
-                  </li>
-
-              </ul>
-          </nav>
-
-        </div>
+    <div class="conPC">
+        <img class="main__image" src="img/stone.jpg">
     </div>
-      <!-- introduce -->
 
-      <!-- card 2col -->
-    <div class="conC">
-    <div class="container">
+    <div class="phone">
 
-        <div class="card-group">
+        <header>
 
-            <div class="card">
+            <div class="head-fixed header">
 
-              <div class="card__imgframe"></div>
-
-              <div class="card__text">
-                  <h2>タイトルがはいります。タイトルがはいります。</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-              <div class="card__imgframe"></div>
-
-              <div class="card__text">
-                  <h2>タイトルがはいります。タイトルがはいります。</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-              <div class="card__imgframe"></div>
-
-              <div class="card__text">
-                  <h2>タイトルがはいります。タイトルがはいります。</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-            </div>
-
-            <div class="card">
-
-              <div class="card__imgframe"></div>
-
-              <div class="card__text">
-                  <h2>タイトルがはいります。タイトルがはいります。</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    </div>
-      <!-- card 2col-->
-
-      <!-- card　3col -->
-    <div class="conC">
-        <div class="container">
-
-            <div class="card-group3">
-
-                <div class="card3">
-
-                    <div class="card__imgframe"></div>
-
-                    <div class="card__text">
-                        <h2>タイトルがはいります。タイトルがはいります。</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="header__reserve">
+                        <a href="#" ><img class="btn-reserve" src="img/reserve.png"></a>
+                    </div>
+                
+                    <div class="header__menu">
+                        <button  class="header__menu-button" type="button">
+                            <span class="dli-menu">
+                                <span></span><span></span><span></span>
+                            </span>
+                        </button>
                     </div>
 
-                </div>
+                    <nav class="header__menu-bar">
+                        
+                        <div class="header__boxA"></div>
 
-                <div class="card3">
+                        <ul class="header__menu-list header__boxB">
+                            <li class="header__menu-item"><a href="#PRICE">GW特別料金</a></li>
+                            <li class="header__menu-item"><a href="#EVENT">特別イベント</a></li>
+                            <li class="header__menu-item"><a href="#">ご予約はこちら</a></li>
+                        </ul>   
 
-                  <div class="card__imgframe"></div>
+                    </nav>
 
-                  <div class="card__text">
-                      <h2>タイトルがはいります。タイトルがはいります。</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-
-                </div>
-
-                <div class="card3">
-
-                  <div class="card__imgframe"></div>
-
-                  <div class="card__text">
-                      <h2>タイトルがはいります。タイトルがはいります。</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-
-                </div>
-
-                <div class="card3">
-
-              <div class="card__imgframe"></div>
-
-              <div class="card__text">
-                  <h2>タイトルがはいります。タイトルがはいります。</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-
-                </div>
-
-                <div class="card3">
-
-            <div class="card__imgframe"></div>
-
-            <div class="card__text">
-                <h2>タイトルがはいります。タイトルがはいります。</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
+
+        </header>
+
+        <div id="target">
+
+            <section class="conA">
+            </section>
+
+            <div class="scrollbox">
+
+                <section class="conB">    
+
+                    <div class="container">
+
+                        <div class="conB__boxA">
+
+                            <div id="HIGE" class="title">
+                                <img src="img/titleA.png">
+                            </div>
+
+                        </div> 
+
+                        <div class="conB__boxB">
+                            <img class="conB__image" src="img/BtoA.png">
+                        </div> 
+
+                        <div class="text conB__boxB">
+
+                            <p>ビジネスシーンや大切な出会いの場で
+                                <br>    第一印象はとても重要です。
+                                <br>    清潔感ある肌で相手に自信と信頼を
+                                <br>    感じてもらうことができれば、
+                                <br>    ビジネスでもプライベートでも
+                                <br>    ワンランク上の自分を
+                                <br>    アピールできます。
+                            </p>
+
+                            <p>また、ひげ脱毛は一度の投資で
+                                <br>    長く続く効果が得られるため、
+                                <br>    毎朝の手間やヒゲ剃り用品のコストも
+                                <br>    削減できます。
+                                <br>    肌に優しい最新の脱毛技術で、
+                                <br>    痛みも少なく、ストレスなく施術を
+                                <br>    受けられます。
+                            </p>
+
+                            <p>ひげ脱毛で新しい自分を発見し、
+                                <br>    毎日がより快適なものになる。
+                                <br>    その一歩を踏み出してみませんか？
+                            </p>
+
+                            <img class="conB__image" src="img/btn.png">
+
+                        </div> 
+
+                    </div>
+
+                </section>
+
+                <div class="footer">
+                    <div class="container">
+
+                        
+        
+
+                        
+                    </div>
                 </div>
-
-                <div class="card3">
-
-          <div class="card__imgframe"></div>
-
-          <div class="card__text">
-              <h2>タイトルがはいります。タイトルがはいります。</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-
-                </div>           
 
             </div>
 
         </div>
-    </div>
-      <!-- card 3col -->
 
-      <!-- img + text -->
-      <div class="conD">
-        <div class="container">
-
-            <article class="case__list">
-
-              <div class="case__item">
-
-                  <div class="case__item__text">
-
-                    <h2>title</h2>
-                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                  </div>
-                
-                  <img class="case__item__img" src="img/dummy.jpg"alt="画像1">
-
-              </div>
-
-              <div class="case__item">
-
-                <div class="case__item__text">
-
-                  <h2>title</h2>
-                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                </div>
-              
-                <img class="case__item__img" src="img/dummy.jpg"alt="画像1">
-
-            </div>
-
-            <div class="case__item">
-
-              <div class="case__item__text">
-
-                <h2>title</h2>
-                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-              </div>
-            
-              <img class="case__item__img" src="img/dummy.jpg"alt="画像1">
-
-          </div>
-
-            </article>
-
-        </div>
-      </div>
-
-    <!-- img 横幅いっぱい -->
-    <div class="conE">
-      <div class="container">
-
-        <div class="image"><img src="img/dummy.jpg"></div>
-
-      </div>
     </div>
 
-    <!-- img 左右余白あり -->
-    <div class="conE">
-      <div class="container">
-
-        <div class="image2"><img src="img/dummy.jpg"></div>
-
-      </div>
-    </div>
-
-    <!-- img 画像を重ねる -->
-    <div class="conF">
-      <div class="container">
-
-          <img class="conF__img" src="img/dummy.jpg" alt="">
-
-          <div class="conF__text">
-            <h2>title</h2>
-            <p class="default-view">Lorem ipsum dolor sit amet, </p>
-            <p id="tgt" class="hidden-view">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cill</p>
-            <button class="more-btn"></button>
-          </div>
-
-      </div>
-    </div>
-
-    <!-- slider -->
-    <div class="conG">
-      <div class="container">
-
-        <ul class="slider">
-
-          <li class="slider__item">
-            <img class="slider__item__img" src="img/dummy2.jpg" alt="">
-            <div class="slider__item__text"><h2>text</h2></div>
-          </li>
-
-          <li class="slider__item">
-            <img class="slider__item__img" src="img/dummy.jpg" alt="">
-            <div class="text"><h2 class="slider__item__text">text</h2></div>
-          </li>
-
-          <li class="slider__item"><img class="slider__item__img" src="img/dummy2.jpg" alt="">
-            <div class="slider__item__text"><h2>text</h2></div>
-          </li>
-
-          <li class="slider__item"><img class="slider__item__img" src="img/dummy.jpg" alt="">
-            <div class="slider__item__text"><h2>text</h2></div>
-          </li>
-
-      </div>
-    </div> 
-    <!--/slider-->
-
-    <!-- slider画面いっぱい -->
-    <div class="conG">
-      <div class="container">
-
-        <ul class="slide__full">
-
-          <li class="slide__full-item01">
-            <div class="slider__item__text"><h2>text</h2></div>
-          </li>
-
-          <li class="slide__full-item02">
-            <div class="slider__item__text"><h2>text</h2></div>
-          </li>
-
-          <li class="slide__full-item03">
-            <div class="slider__item__text"><h2>text</h2></div>
-          </li>
-
-        </ul>
-
-        </div>
-    </div>
-
-      <!-- footer -->
-    <footer class="footer">
-        <div class="container">
-
-          <div class="foot__box">
-
-              <div class="footA">
-
-                <div class="footA__text">
-
-                  <h2 class="footA__text__title">HP title</h2>
-                  <p>exsample@.com</p>
-                  <p><a href="#">https://exsample.com</a></p>
-                  
-                </div>
-
-                <nav class="sns">
-
-                  <ul class="sns__list">
-                      <li class="sns__item">
-                          <a href="#" target="_blank">
-                              <span class="fa-brands fa-square-threads" title="threads" >
-                              </span>
-                          </a>
-                      </li>  
-                      
-                      <li class="sns__item">
-                          <a href="#" target="_blank">
-                              <span class="fa-brands fa-instagram" title="instagram">
-                              </span>
-                          </a>
-                      </li>
-                      
-                      <li class="sns__item">
-                          <a href="#" target="_blank">
-                              <span  class="fa-regular fa-note-sticky" title="note" >
-                              </span>
-                          </a>
-                      </li>
-    
-                  </ul>
-                </nav>
-
-              </div>
-
-              <nav class="footB">
-
-                <div class="footB__list__box">
-
-                  <ul class="footB__list">
-                      <li class="footB__item"><a href="#">TOP</a></li>
-                      <li class="footB__item"><a href="#">CONTENTS</a></li>
-                      <li class="footB__item"><a href="#">CONTENTS2</a></li>
-                  </ul>
-
-                  <ul class="footB__list">
-                      <li class="footB__item"><a href="#">DUMMY</a></li>
-                      <li class="footB__item"><a href="#">DUMMY</a></li>
-                      <li class="footB__item"><a href="#">DUMMY</a></li>
-                  </ul>
-
-                </div>
-
-              </nav>
-
-          </div>
-
-              <div class="footC">
-                  © COPY RIGHT
-              </div>
-
-        </div>  
-    </footer>
-      <!-- /footer -->
-
-</div>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-      <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
