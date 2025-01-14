@@ -16,7 +16,6 @@ section{
 }
 
 .scrollbox{
-  padding-top: 180%;
   z-index: 0;
   background-color: var(--dark-main-color);
 }
@@ -72,15 +71,15 @@ input, textarea{
  /* hero-top */
 
 .conA {
+  padding: 0;
+}
+
+.conA__image{
   width: 100%;
   height:auto;
   min-height: 100vh;
-  background-image: url(../img/top.png);
-  background-color:var(--dark-main-color ) ;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-z-index: 100;
+  z-index: 100;
+
 }
 
 /* hero-top */
@@ -94,6 +93,7 @@ z-index: 100;
   background-position: center center;
   background-size: cover; 
   background-repeat: no-repeat;
+  margin-top: -10rem;
 }
 
 .conB__boxA,
@@ -103,7 +103,7 @@ z-index: 100;
 
 .conB__image{
   width: 100%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 /* conB introduce*/

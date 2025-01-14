@@ -32,14 +32,6 @@
     .conA__boxA{
       position: relative;
     }
-
-    .conA__image{
-      position: absolute;
-      top:330px;
-      left: 100px;
-      width: 80%;
-      overflow: hidden;
-    }
    
   } 
     
