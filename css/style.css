@@ -1,7 +1,7 @@
 /* 基本色 */
 :root {
   --main-color : #fff; /*rgba(255, 255, 255, 0)*/
-  --accent-color : #fee5f0;
+  --accent-color : #ececec;
   --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
   --large-width:1000px;
   --middle-width:800px;
@@ -17,7 +17,6 @@ section{
 
 .scrollbox{
   z-index: 0;
-  background-color: var(--dark-main-color);
 }
 
 
@@ -46,6 +45,10 @@ section{
   margin: 10px auto;
 }
 
+.conA{
+  padding: 0;
+}
+
 .conA,
 .scrollbox,
 .header__menu,
@@ -70,8 +73,9 @@ input, textarea{
 /* ------------------------------ */
  /* hero-top */
 
-.conA {
-  padding: 0;
+.conA,
+.conB {
+  background-color: var(--dark-main-color);
 }
 
 .conA__image{
@@ -93,7 +97,7 @@ input, textarea{
   background-position: center center;
   background-size: cover; 
   background-repeat: no-repeat;
-  margin-top: -10rem;
+  margin-top: -1rem;
 }
 
 .conB__boxA,
@@ -106,7 +110,22 @@ input, textarea{
   margin: 50px auto;
 }
 
-/* conB introduce*/
+/* conB*/
 /* ------------------------------ */
+/* conC */
 
+.conC{
+  background-color: var(--accent-color);
+}
+
+.conC__image{
+  width: 65%!important;
+}
+
+.conC p {
+  color: var(--dark-main-color);
+}
+
+/* conC*/
+/* ------------------------------ */
 

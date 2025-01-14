@@ -4,7 +4,7 @@
 /* 基本色 */
 :root {
   --main-color : #fff; /*rgba(255, 255, 255, 0)*/
-  --accent-color : #fee5f0;
+  --accent-color : #ececec;
   --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
   --large-width:1000px;
   --middle-width:800px;
@@ -164,11 +164,10 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  height: 110vh;
+  height: 120vh;
   margin-top: 0;
   padding-right: 0;
   padding-left: 0;
-  padding-bottom: 40px;
   background-color: var(--main-color );
 }
 
@@ -180,139 +179,12 @@
   letter-spacing: 0.3rem;
 }
 
-/* ------------------------------ */
-
-/* ------------------------------ */
-/*アコーディオン*/
-
-#wrapArea {
-  clear: both;
-  display:block;
-  width: 100%;
-  height: auto;
-  margin: 20px auto;
-  padding: 0 2vw;
-}
-
-/* inputを非表示 */
-.acd-check{
-  display: none; 
-}
-
-.acd-label {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-  color: var(--main-color);
-  -webkit-tap-highlight-color:transparent;
-
-}
-
-/* アコーディオンアイコン　プラスボタン */
-.acd-label .AcdIcon,
-.acd-label .AcdIcon::after{
-  display: block;
-  box-sizing: border-box;
-  background: currentColor;
-  border-radius: 10px;
-}
-.acd-label .AcdIcon {
-  position: absolute;
-  transform: translate(0, -50%) scale(0.9);
-  width: 16px;
-  height: 2px;
-  top: 50%;
-  right: 2%;
-  transition: 0.4s;
-  background-color: var(--main-color);
-}
-.acd-label .AcdIcon::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 16px;
-  top: -7px;
-  left: 7px;
-  background-color: var(--main-color);
-}
-
-
-/* アコーディオンアイコン　マイナスボタン */
-.acd-check:checked + .acd-label .AcdIcon {
-  box-sizing: border-box;
-  position: absolute;
-  display: block;
-  transform: scale(0.9);
-  width: 16px;
-  height: 2px;
-  background: currentColor;
-  border-radius: 10px;
-  transition: 0.4s;
-  background-color: var(--main-color);
-}
-.acd-check:checked + .acd-label .AcdIcon::after{
-  display: none;
-}
-
-/* アコーディオンの中身 */
-.acd-content {
-  display: block;
-  height: 0;
-  margin: 0;
-  border: 0;
-  padding: 0 10px;
-  box-sizing: border-box;
-  background-color: transparent;
-  opacity: 0;
-  transition: 0.4s;
-  visibility: hidden;
-}
-
-.acd-check:checked + .acd-label + .acd-content {
-  height: 170px;
-  opacity: 1;
-  padding: 10px 20px;
-  visibility: visible;
-}
-
-.acd-content p {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
-}
-/*アコーディオン*/
-/* ------------------------------ */
-
 /* header */
 /* ------------------------------ */
 
 /* ------------------------------ */
 /* footer */
  
-  .footer {
-      background-image: url(../img/foot.png);
-      width: 100%;
-      height:auto;
-      min-height: 600px;
-      background-position: center bottom;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
- 
-  .tap__btn{
-    position: fixed;
-    top:31rem;
-    left:18rem;
-    width: 23%;
-  }
-
 
     
   /* footer */
@@ -324,7 +196,7 @@
   .dli-menu {
     display: inline-block;
     vertical-align: middle;
-    color: var(--main-color);
+    color: var(--accent-color);
     line-height: 1;
     width: 1em;
   }

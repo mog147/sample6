@@ -2,13 +2,12 @@
 /* 基本色 */
 :root {
   --main-color : #fff; /*rgba(255, 255, 255, 0)*/
-  --accent-color : #fee5f0;
+  --accent-color : #ececec;
   --dark-main-color : #333; /*rgba(51, 51, 51, 0)*/
   --large-width:1000px;
   --middle-width:800px;
   --small-width:450px;
 }
-  
  
  /* ------------------------ */
 /* phoneのときの制御 */
@@ -64,10 +63,6 @@
       font-size: 55px;
       letter-spacing: 0.3rem;
       font-weight: normal;
-      /* adobe fonts */
-      font-family: "ta-dansyaku", sans-serif;
-      font-weight: 400;
-      font-style: normal;
       margin: 2rem 0;
     }
   
@@ -78,26 +73,16 @@
     p {
         font-size: 18px;
     }
-  
-    .header{
-      position: fixed;
+
+    header{
+      z-index: 100;
     }
-  
-    .header__menu{
-      display: none;
-      position: relative;
-    }
+
   
     .header__menu-list{
       background-color: transparent;
       height: auto;
   
-    }
-
-    .header__menu-bar,
-    .tap__btn{
-      display: none!important;
-
     }
 
     .conPC {
@@ -171,8 +156,8 @@
       z-index: 30;
     }
  
-    
-
+    header,
+    .conA,
     .scrollbox{
       max-width:var(--small-width);
       height: auto;
@@ -181,8 +166,17 @@
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-      top:2000px;
+      
       position: absolute;
+    }
+
+    .conA{
+      margin-top:30% ;
+      z-index: 100;
+    }
+
+    .scrollbox{
+      top:1800px;
     }
   
     .conB{
